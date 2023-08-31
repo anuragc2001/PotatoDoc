@@ -23,12 +23,7 @@ Our project not only showcases the potential of deep learning in agriculture but
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/anuragc2001)
-
-
-## Documentation
-
-[Documentation](https://linktodocumentation)
+- [@anuragc2001](https://www.github.com/anuragc2001)
 
 ## How It Works:
 
@@ -43,60 +38,68 @@ Our project not only showcases the potential of deep learning in agriculture but
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
+![App Screenshot](https://github.com/anuragc2001/PotatoDoc/blob/main/results/intial.png)
+![App Screenshot](https://github.com/anuragc2001/PotatoDoc/blob/main/results/loss_accuracy.png)
+![App Screenshot](https://github.com/anuragc2001/PotatoDoc/blob/main/results/model_summary.png)
+![App Screenshot](https://github.com/anuragc2001/PotatoDoc/blob/main/results/test_result.png)
 
 
 ## Installation
+- Place the saved model file (potato_disease_model.h5) and preprocessing script (if needed) in a project directory.
 
-Install my-project with npm
+- Create a Flask app (Python) named app.py in the project directory and load the saved model.
 
-```bash
-  npm install my-project
-  cd my-project
-```
+- Define a route in app.py to handle image uploads, preprocess images, use the model for prediction, and display results.
+
+- Create an HTML template named index.html for uploading images and another template named result.html for displaying predictions.
+
+- Run the Flask app in your terminal using the command flask run.
+
+- Access the app in your web browser at http://127.0.0.1:5000/, upload images, and view the predictions.
     
 ## Usage/Examples
+ ### Accessing the System:
 
-```javascript
-import Component from 'my-project'
+- Open your web browser and navigate to the following URL: [Insert URL here].
+- You will be directed to the homepage of the Potato Disease Predictor.
+ ### Uploading an Image:
 
-function App() {
-  return <Component />
-}
-```
+- On the homepage, you will find an option to "Upload Image" or "Get Started." Click on this button to proceed.
+- A file upload dialog box will appear. Choose an image of a potato leaf that you wish to analyze for diseases.
+- Click "Open" or "Upload" to upload the selected image.
 
+ ### Viewing Results:
 
-## Running Tests
+- Once the image is uploaded, the system will process it using the CNN model.
+- Within moments, the system will display the results, indicating whether the uploaded image shows signs of disease or is healthy.
+- You will also find additional information about the predicted disease, if applicable.
 
-To run tests, run the following command
+ ### Interpreting Results:
 
-```bash
-  npm run test
-```
+- If the result shows "Healthy," the image does not exhibit signs of disease.
+- If the result indicates a disease, the system will specify the type of disease identified (e.g., blight).
+- You can also find a brief description of the detected disease and its potential impact on potato crops.
+ ### Taking Action:
+
+- If the image shows signs of disease, consider taking immediate action to prevent the spread of the infection.
+- Refer to relevant agricultural resources or consult experts for guidance on suitable interventions.
+ ### Note:
+
+- The Potato Disease Predictor using CNN is designed for informational purposes and is not a substitute for professional agricultural advice.
+- For accurate disease management, consult with local agricultural experts and follow recommended practices.
 
 
 ## Optimizations
 
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+To be added...
 
 
 ## 🚀 About Me
-I'm a full stack developer...
+
+I'm currently pursuing a degree in computer science engineering in West Bengal, India. My interests are strongly oriented towards software development and delving into the realm of data science. Beyond academics, I find immense joy in exploring art, watching movies, and embarking on journeys with my girlfriend. Clarity and firm stances matter to me; I find value in responses rooted in real-life experiences rather than mere political correctness. My queries encompass a wide range of subjects, all of which align with my experiences as a student within the distinct context of India. I'm open to discussing any topic close to my heart and eagerly await your opinions and insights.
 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to me at chakraborty.anurag01@gmail.com
 
