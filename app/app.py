@@ -55,19 +55,9 @@ def predict_route():
    
     return result_format(pred)
 
-@app.route('/predict', methods=['POST'])
-def get_predict_route():
-    img = request.files['image']
-    img = tf.io.decode_image(img.read(), channels=3)
-    pred = predict(img)
-   
-    result = result_format(pred).get_json()
-    print(type(result))
-    return render_template('index.html', prediction=result)
-
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', prediction=None)
 
 
 if __name__ == '__main__':
