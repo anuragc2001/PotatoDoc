@@ -34,6 +34,9 @@ document.getElementById("upload-form").addEventListener("submit", function(e) {
                 predictedLabel.style.color = "black";
                 predictedLabel.style.backgroundColor = "lightgreen";
 
+                statusLabel.textContent = " ";
+                statusLabel.style.backgroundColor = "white";
+
             }else{
 
                 predictedLabel.textContent = "Predicted Label: " + data.prediction;
