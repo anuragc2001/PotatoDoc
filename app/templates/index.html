@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data" action="/predict">
+    <p><input type="file" name="image"></p>
+    <p><input type="submit" value="Predict"></p>
+    <p>
+        <h4>Result: {{ prediction['prediction'] }}</h4>
+        <h4>Confidence: {{ prediction['confidence'] }}%</h4>
+    </p>
+    </form>
+</body>
+</html>
