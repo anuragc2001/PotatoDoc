@@ -8,7 +8,7 @@ Our project addresses the critical issue of potato crop health, where disease ou
 
 ## Features
 
-- **High Accuracy**: Our CNN model achieves a remarkable 95% accuracy in identifying various potato diseases, providing reliable and actionable insights to farmers.
+- **High Accuracy**: Our CNN model achieves a remarkable 97.66% accuracy in identifying various potato diseases, providing reliable and actionable insights to farmers.
 
 - **Early Detection**: By detecting diseases early, farmers can implement targeted treatments, reducing the spread of diseases and minimizing yield losses.
 
