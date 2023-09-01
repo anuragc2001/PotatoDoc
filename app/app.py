@@ -14,11 +14,11 @@ model_path = os.path.join(os.getcwd(), 'saved_models', f'version_{model_version}
 model = tf.keras.models.load_model(model_path)
 
 # load class names
-CLASS_NAMES_PATH = os.path.join(os.getcwd(), 'class_names.json')
-CLASS_NAMES = None
+# CLASS_NAMES_PATH = os.path.join(os.getcwd(), 'class_names.json')
+CLASS_NAMES = ['Early Blight', 'Healthy', 'Late Blight']
 
-with open(CLASS_NAMES_PATH, 'r') as f:
-    CLASS_NAMES = json.load(f)
+# with open(CLASS_NAMES_PATH, 'r') as f:
+#     CLASS_NAMES = json.load(f)
 
 # define prediction function
 #image size 256x256
