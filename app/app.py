@@ -6,6 +6,7 @@ import numpy as np
 import tensorflow as tf
 import os
 import json
+from waitress import serve
 
 # load model
 model_version = '1.1'
@@ -14,11 +15,15 @@ model_path = os.path.join(os.getcwd(), 'saved_models', f'version_{model_version}
 model = tf.keras.models.load_model(model_path)
 
 # load class names
-CLASS_NAMES_PATH = os.path.join(os.getcwd(), 'CLASS_NAMES.json')
-CLASS_NAMES = None
+# CLASS_NAMES_PATH = os.path.join(os.getcwd(), 'CLASS_NAMES.json')
+CLASS_NAMES = {
+    "0": "Early Blight",
+    "1": "Late Blight",
+    "2": "Healthy"
+}
 
-with open(CLASS_NAMES_PATH, 'r') as f:
-    CLASS_NAMES = json.load(f)
+# with open(CLASS_NAMES_PATH, 'r') as f:
+#     CLASS_NAMES = json.load(f)
 
 # define prediction function
 #image size 256x256
@@ -61,5 +66,5 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    serve(app, port=80, threads=1)
             
