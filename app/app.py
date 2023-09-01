@@ -5,8 +5,7 @@ from flask_cors import CORS
 import numpy as np
 import tensorflow as tf
 import os
-import json
-import gunicorn
+from waitress import serve
 
 # load model
 model_version = '1.1'
@@ -66,6 +65,6 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(debug=False, port=80)
+   serve(app, port = 50100, threads = 4)
 
             
