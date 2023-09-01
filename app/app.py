@@ -14,7 +14,7 @@ model_path = os.path.join(os.getcwd(), 'saved_models', f'version_{model_version}
 model = tf.keras.models.load_model(model_path)
 
 # load class names
-CLASS_NAMES_PATH = os.path.join(os.getcwd(), 'CLASS_NAMES.json')
+CLASS_NAMES_PATH = os.path.join(os.getcwd(), 'class_names.json')
 CLASS_NAMES = None
 
 with open(CLASS_NAMES_PATH, 'r') as f:
