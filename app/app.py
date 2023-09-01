@@ -15,7 +15,11 @@ model = tf.keras.models.load_model(model_path)
 
 # load class names
 # CLASS_NAMES_PATH = os.path.join(os.getcwd(), 'class_names.json')
-CLASS_NAMES = ['Early Blight', 'Healthy', 'Late Blight']
+CLASS_NAMES = {
+    "0": "Early Blight",
+    "1": "Late Blight",
+    "2": "Healthy"
+}
 
 # with open(CLASS_NAMES_PATH, 'r') as f:
 #     CLASS_NAMES = json.load(f)
